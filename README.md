@@ -4,6 +4,6 @@
 
 ## ⌨️ Proyectos de React
 
-| Número | Proyecto | Código | Web |
-| --- | --- | --- | --- |
+| Número | Proyecto | Código |
+| --- | --- | --- |
 | `01` | Tw Follow Card | [Ver](projects/tw-follow-card)
