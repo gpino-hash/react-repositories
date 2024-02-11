@@ -1,0 +1,119 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.tw--follow-card {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: .8em;
+  justify-content: space-between;
+}
+
+.tw--follow-card--header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tw--follow-card--info {
+  display: flex;
+  flex-direction: column;
+}
+
+.tw--follow-card--info-username {
+  opacity: .6;
+  text-align: left;
+}
+
+.tw--follow-card--avatar {
+  height: 48px;
+  width: 48px;
+  border-radius: 1000px;
+}
+
+.tw--follow-card--button {
+  margin-left: 16px;
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  transition: .3s ease background-color, .3s ease color;
+}
+
+.tw--follow-card--text {
+  display: block;
+}
+
+.tw--follow-card--button.is-following:hover .tw--follow-card--text {
+  display: none;
+}
+
+.tw--follow-card--button:hover {
+  opacity: .8;
+}
+
+.tw--follow-card--button.is-following {
+  color: white;
+  background-color: transparent;
+  border: 1px solid #bbb;
+  width: 140px;
+}
+
+.tw--follow-card--button.is-following:hover {
+  background-color: rgba(255, 0, 9, 0.178);
+  color: red;
+  border: 1px solid red;
+  transition: .3s ease all;
+}
+
+.tw--follow-card--button.is-following:hover .tw--follow-card--stop {
+  display: block;
+}
+
+.tw--follow-card--stop {
+  display: none;
+}
