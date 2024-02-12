@@ -1,9 +1,9 @@
-import {Square} from "./Square.jsx";
-import {TURNS} from "../constants.js";
+import { Square } from './Square.jsx'
+import { TURNS } from '../constants.js'
 
 const TurnedSquare = (props) => {
   return (
-    <section className="turn">
+    <section className='turn'>
       <Square isSelected={props.turn === TURNS.X}>
         {TURNS.X}
       </Square>
@@ -11,7 +11,7 @@ const TurnedSquare = (props) => {
         {TURNS.O}
       </Square>
     </section>
-  );
+  )
 }
 
 export default TurnedSquare
